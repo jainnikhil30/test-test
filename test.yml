@@ -1,0 +1,10 @@
+---
+ - name: test
+   hosts: localhost
+   gather_facts: false
+   tasks:
+    - name: test file
+      set_fact:
+          foo:
+            bar: value
+    - debug: var=foo.bar
