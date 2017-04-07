@@ -25,5 +25,8 @@
 		"vars": {
 			"ansible_user": "ubuntu"
 		}
+	},
+	"_meta": {
+                "hostvars": {}
 	}
 }
