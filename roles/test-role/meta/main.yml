@@ -1,0 +1,4 @@
+---
+dependencies:
+  - src: git+https://github.com/geerlingguy/ansible-role-composer.git
+    version: {{ docker_version }}
