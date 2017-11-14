@@ -1,3 +1,2 @@
-- src: https://github.com/bennojoy/nginx
+- src: https://github.com/jainnikhil30/galaxy-role
   version: master
-  name: nginx_role
