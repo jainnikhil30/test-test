@@ -8,5 +8,6 @@
           foo:
             bar: value
     - debug: var=foo.bar
+    
     - pause: 
           minutes: 1
