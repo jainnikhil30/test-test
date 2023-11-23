@@ -10,4 +10,4 @@
     - debug: var=foo.bar
     
     - pause: 
-          minutes: 1
+          minutes: 5
