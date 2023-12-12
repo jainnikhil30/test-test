@@ -8,6 +8,7 @@
     - name: install tree
       yum:
         name: tree
+        state: present
       become: true
     - name: Tree
       ansible.builtin.command:
