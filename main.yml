@@ -15,7 +15,7 @@
 #        cmd: tree /test
     - name: ls lrta
       ansible.builtin.command:
-        cmd: ls -lrta /test
+        cmd: ls -lrta /test/awx/tools/scripts/
     - name: Execute Firehose
       ansible.builtin.command:
         cmd: python3 /test/awx/tools/scripts/firehose.py --jobs-per-hour=1 --events-per-job=1 --batch-size=1 --days-delta=1
