@@ -6,7 +6,7 @@
         repo: 'https://github.com/ansible/awx.git'
         dest: /test
     - name: install tree
-      yum:
+      ansible.builtin.dnf:
         name: tree
         state: present
       become: true
