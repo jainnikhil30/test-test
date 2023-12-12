@@ -5,6 +5,10 @@
       ansible.builtin.git:
         repo: 'https://github.com/ansible/awx.git'
         dest: /test
+    - name: install tree
+      yum:
+        name: tree
+      become: true
     - name: Tree
       ansible.builtin.command:
         cmd: tree /test
