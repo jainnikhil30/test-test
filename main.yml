@@ -5,14 +5,17 @@
       ansible.builtin.git:
         repo: 'https://github.com/ansible/awx.git'
         dest: /test
-    - name: install tree
-      ansible.builtin.dnf:
-        name: tree
-        state: present
-      become: true
-    - name: Tree
+#    - name: install tree
+#      ansible.builtin.dnf:
+#        name: tree
+#        state: present
+#      become: true
+#    - name: Tree
+#      ansible.builtin.command:
+#        cmd: tree /test
+    - name: ls lrta
       ansible.builtin.command:
-        cmd: tree /test
+        cmd: ls -lrta /test
     - name: Execute Firehose
       ansible.builtin.command:
         cmd: python3 /test/awx/tools/scripts/firehose.py --jobs-per-hour=1 --events-per-job=1 --batch-size=1 --days-delta=1
